@@ -1,0 +1,15 @@
+{
+  "name": "llama-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+" "pivate": true
+}	":
+{
+
+"

@@ -689,4 +689,212 @@ const styles = StyleSheet.create({
   },
   statLabel: {
     fontSize: 11,
-    color: '#888'
+    color: '#888',
+    marginBottom: 4,
+    textTransform: 'uppercase',
+  },
+  statValue: {
+    fontSize: 16,
+  },
+  selectButton: {
+    paddingVertical: 14,
+    borderRadius: 12,
+    alignItems: 'center',
+  },
+  selectButtonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000',
+  },
+  loadingOverlayPro: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0,0,0,0.97)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 30,
+  },
+  loadingCard: {
+    backgroundColor: '#1a1a1a',
+    padding: 40,
+    borderRadius: 24,
+    alignItems: 'center',
+    width: '100%',
+    borderWidth: 1,
+    borderColor: '#333',
+  },
+  loadingTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginTop: 20,
+    marginBottom: 10,
+  },
+  loadingDescription: {
+    fontSize: 14,
+    color: '#888',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  loadingHint: {
+    fontSize: 12,
+    color: '#666',
+    textAlign: 'center',
+    lineHeight: 18,
+  },
+
+  // Chat Screen (Claude-style)
+  chatContainer: {
+    flex: 1,
+    backgroundColor: '#0a0a0a',
+  },
+  chatHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 15,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#222',
+  },
+  menuButton: {
+    padding: 8,
+  },
+  menuIcon: {
+    fontSize: 24,
+    color: '#fff',
+  },
+  headerCenter: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  chatHeaderTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#fff',
+  },
+  chatHeaderSubtitle: {
+    fontSize: 11,
+    color: '#888',
+    marginTop: 2,
+  },
+  headerRight: {
+    width: 40,
+  },
+  messagesContainer: {
+    flex: 1,
+  },
+  messagesContent: {
+    padding: 20,
+  },
+  messageBubble: {
+    marginBottom: 20,
+    padding: 16,
+    borderRadius: 16,
+    maxWidth: '85%',
+  },
+  userBubble: {
+    backgroundColor: '#2a4a7c',
+    alignSelf: 'flex-end',
+  },
+  assistantBubble: {
+    backgroundColor: '#1a1a1a',
+    alignSelf: 'flex-start',
+    borderWidth: 1,
+    borderColor: '#333',
+  },
+  messageRole: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#888',
+    marginBottom: 8,
+    textTransform: 'uppercase',
+  },
+  messageContent: {
+    fontSize: 15,
+    color: '#fff',
+    lineHeight: 24,
+  },
+  thinkingIndicator: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  thinkingText: {
+    fontSize: 14,
+    color: '#888',
+    marginLeft: 10,
+    fontStyle: 'italic',
+  },
+  inputArea: {
+    paddingHorizontal: 15,
+    paddingVertical: 12,
+    borderTopWidth: 1,
+    borderTopColor: '#222',
+    backgroundColor: '#0a0a0a',
+  },
+  inputWrapper: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    backgroundColor: '#1a1a1a',
+    borderRadius: 24,
+    paddingHorizontal: 15,
+    paddingVertical: 8,
+    borderWidth: 1,
+    borderColor: '#333',
+  },
+  claudeInput: {
+    flex: 1,
+    fontSize: 15,
+    color: '#fff',
+    maxHeight: 120,
+    paddingVertical: 8,
+  },
+  sendIconButton: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: '#00ff88',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 8,
+  },
+  sendIconButtonDisabled: {
+    backgroundColor: '#333',
+  },
+  sendIcon: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#000',
+  },
+
+  // Buttons
+  primaryButton: {
+    backgroundColor: '#00ff88',
+    paddingVertical: 16,
+    borderRadius: 12,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  primaryButtonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000',
+  },
+  secondaryButton: {
+    backgroundColor: 'transparent',
+    paddingVertical: 16,
+    borderRadius: 12,
+    alignItems: 'center',
+    marginTop: 10,
+    borderWidth: 1,
+    borderColor: '#333',
+  },
+  secondaryButtonText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#fff',
+  },
+});

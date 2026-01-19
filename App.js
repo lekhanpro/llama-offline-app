@@ -1,6 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import WelcomeScreen from './screens/WelcomeScreen';
+import SetupScreen from './screens/SetupScreen';
+import ModelSelectScreen from './screens/ModelSelectScreen';
 
 // Import all screens
 import SimpleTest from './screens/SimpleTest';
@@ -9,14 +12,16 @@ import SimpleTest from './screens/SimpleTest';
 const DEV_MODE = true;
 
 export default function App() {
+
   const [currentScreen, setCurrentScreen] = useState('simple');
   const [showDevMenu, setShowDevMenu] = useState(false);
 
-  const screens = [
-    { id: 'simple', name: 'Simple Test', component: SimpleTest },
-    // Add new screens here as we build them
-  ];
-
+const screens = [
+  { id: 'simple', name: 'Simple Test', component: SimpleTest },
+  { id: 'welcome', name: 'Welcome', component: WelcomeScreen },
+  { id: 'setup', name: 'Setup Guide', component: SetupScreen },
+  { id: 'models', name: 'Model Select', component: ModelSelectScreen },
+];
   const CurrentScreen = screens.find(s => s.id === currentScreen)?.component || SimpleTest;
 
   return (
